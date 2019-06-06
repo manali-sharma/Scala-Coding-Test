@@ -138,4 +138,17 @@ Why do we still keep approcah 1? -> For the beginning values when the bias is la
 <br> Time Complexity = O(nlogn)
 
 
+# Corner Cases
+Corner Case 1: There are no people waiting to cross the bridge. The number of people inputed = 0
+<br>Answer: 0
+<br>
+<br>
+Corner Case 2: There is only one person waiting to cross the bridge. The number of people inputed = 1
+<br>Answer: crossingSpeeds[0]
+<br>
+<br>
+Corner Case 2: There is only one person waiting to cross the bridge. The number of people inputed = 2
+<br>Answer: max(crossingSpeeds[0], crossingSpeeds[1]
+<br>
+
 
