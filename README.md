@@ -116,14 +116,14 @@ The fastest and the second fastest cross the bridge and one of these transporter
 bias = time taken for fastest and second fastest to cross + time taken by second fastest to return + time taken by the fastest to return<br>
 bias = max(crossingSpeeds[t1], crossingSpeeds[t2])+crossingSpeed[t2]+crossingSpeeds[t1]<br>
 <br>
-since the vector is soreted t1=0, t2=1
+since the vector is sorted t1=0, t2=1
 <br>
 <br>
 bias = max(crossingSpeeds[0], crossingSpeeds[1])+crossingSpeeds[1]+crossingSpeeds[0]<br>
 bias = crossingSpeeds[1]+crossingSpeeds[1]+crossingSpeeds[0]<br>
 bias = 2 * crossingSpeeds[1] + crossingSpeeds[0]<br>
 <br>
-This bias is added to every pair of people crossing the bridge as follows:
+This bias is added to every pair of people crossing the bridge as follows:<br>
 bias = 2 * crossingSpeeds[1] - crossingSpeeds[0];<br>
 		while (crossingSpeeds[i - 2] > bias) {<br>
 			total_time_taken -= crossingSpeeds[i - 2] - bias;<br>
@@ -133,6 +133,9 @@ bias = 2 * crossingSpeeds[1] - crossingSpeeds[0];<br>
 The While condition:<br>
 This condition combines approach 1 and approach 2. If the bias is greater than the speed of the pair of people crossing the bridge then use approach 1, otherwise use approach 2.
 Why do we still keep approcah 1? -> For the beginning values when the bias is larger than the speed of the crossing people, it is better to send the fastest person with the slower person whose crossingSpeed is very close to the crossingSpeed of the second fastest person instead of using the second fastest person twice.
+<br> 2 * crossingSpeeds[0] < 2 * crossingSpeeds[1]
+<br> Thus approach 1 is better for inputs with nearly same crossingSpeeds.
+<br> Time Complexity = O(nlogn)
 
 
 
