@@ -111,7 +111,7 @@ Since two people cross the bridge at a time. In the end there would be two peopl
 Note that we have summed all the crossingSpeeds initially. Then later in the while loop we jump over every alternate node and subtract the faster speed as the time taken to cross = max(crossingSpeeds[node1], crossingSpeeds[node2]) where node 1 and node 2 any arbitary nodes.
 
 STEP 3 and STEP 4 imply there is a bias added everytime a set of people cross the bridge.<br>
-The fastest and the second fastest cross the bridge and one of these transporters comes back with the tourch then after the two slower people have passes the other transporter comes back with the tourch.
+The fastest and the second fastest cross the bridge and one of these transporters comes back with the tourch then after the two slower people have crossed the bridge the other transporter comes back with the tourch.
 <br>
 bias = time taken for fastest and second fastest to cross + time taken by second fastest to return + time taken by the fastest to return<br>
 bias = max(crossingSpeeds[t1], crossingSpeeds[t2])+crossingSpeed[t2]+crossingSpeeds[t1]<br>
