@@ -73,11 +73,11 @@ total_time_taken = 0
 <br>
 <br>
 STEP 2: <br>
-Use approach 1 until you see that it is inefficient to send the two people together.
+Use approach 1 until you see that it is inefficient to send the two people together. That is the bias created from second fastest and the fastest node described in the implementation section is greater than the crossingSpeed of a pair.
 <br>
 <br>
 STEP 3:<br>
-Pick the 2 people with the fastest crossing Speeds and call him the transporters t1 and t2.<br>
+Pick the 2 people with the fastest crossing Speeds and call them the transporters t1 and t2.<br>
 assume t1 is the fastest.
 <br>
 <br>
@@ -87,12 +87,12 @@ total_time_taken = total_time_taken + crossing_Speeds[t2]
 <br>
 <br>
 STEP 5:<br>
-The transporter t1 returns back to the initial point crossing back the bridge. <br>
+The transporter t1 returns to the initial point crossing back the bridge. <br>
 total_time_taken = total_time_taken + crossingSpeeds[t1]
 <br>
 <br>
 STEP 6:<br>
-Pick any one of the other totalPeople-2 slower people (s1 and s2) who cross the bridge together.  <br>
+Pick any two of the other totalPeople-2 slower people (s1 and s2) who cross the bridge together.  <br>
 total_time_taken = total_time_taken + max(crossingSpeeds[s1], crossingSpeeds[s2])
 Make s1 and s2 as visited, such that they are not selected again as they have already crossed the bridge.
 <br>
