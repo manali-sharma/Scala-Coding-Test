@@ -10,7 +10,7 @@ Write a program in C++ that determines the fastest time they can cross the bridg
 Let,<br>
 totalPeople be the number of people trying to cross the bridge <br>
 crossingSpeeds store the time required by each person to cross the bridge <br>
-Time taken by 2 people (p1 and p2) to cross the bridge = max(crossingSpeeds[p1], crossingSpeeds[p2]) <br>
+Time taken by 2 people (t1 and t2) to cross the bridge = max(crossingSpeeds[t1], crossingSpeeds[t2]) <br>
 Determine the minimum time required for all of the totalPeople to cross the bridge <br>
 
 # Solution Approach 1 : 
@@ -36,7 +36,7 @@ STEP 5:<br>
 Make s1 as visited, such that it is not selected again as it has already crossed the bridge.
 <br>
 <br>
-STEP 6:
+STEP 6:<br>
 Jump to STEP 3 until there is just one person(last_person) remaining to cross the bridge.
 <br>
 <br>
@@ -97,7 +97,7 @@ total_time_taken = total_time_taken + max(crossingSpeeds[s1], crossingSpeeds[s2]
 Make s1 and s2 as visited, such that they are not selected again as they have already crossed the bridge.
 <br>
 <br>
-STEP 7:
+STEP 7:<br>
 Jump to STEP 4 
 <br>
 
