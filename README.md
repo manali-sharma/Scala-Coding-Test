@@ -16,7 +16,7 @@ Determine the minimum time required for all of the totalPeople to cross the brid
 # Solution Approach 1 : 
 Follow the following steps sequentially:<br>
 STEP 1:<br>
-Sort the crossingSpeeds vector
+Sort the crossingSpeeds vector<br>
 total_time_taken = 0
 <br>
 <br>
@@ -68,7 +68,7 @@ Thus solution approach 1 does not give the correct solution.
 # Solution Approach 2 : 
 Follow the following steps sequentially:<br>
 STEP 1:<br>
-Sort the crossingSpeeds vector
+Sort the crossingSpeeds vector<br>
 total_time_taken = 0
 <br>
 <br>
