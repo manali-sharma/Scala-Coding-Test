@@ -148,7 +148,7 @@ Corner Case 2: There is only one person waiting to cross the bridge. The number 
 <br>
 <br>
 Corner Case 2: There is only one person waiting to cross the bridge. The number of people inputed = 2
-<br>Answer: max(crossingSpeeds[0], crossingSpeeds[1]
+<br>Answer: max(crossingSpeeds[0], crossingSpeeds[1])
 <br>
 
 
