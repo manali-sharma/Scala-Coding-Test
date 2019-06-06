@@ -108,7 +108,7 @@ Change to the previous implementation:
 total_time_taken = (totalPeople - 3) * crossingSpeeds[0] + accumulate(crossingSpeeds.begin(), crossingSpeeds.end(), 0);
 
 Since two people cross the bridge at a time. In the end there would be two people remaining instead of one who have not crossed the bridge. Thus, the fastest person crosses back totalPeople-3. 
-Note that we have summed all the crossingSpeeds initially. Then later in the while loop we jump over every alternate node and subtract the slower speed as the time taken to cross = max(crossingSpeeds[node1], crossingSpeeds[node2]) where node 1 and node 2 any aribetary nodes.
+Note that we have summed all the crossingSpeeds initially. Then later in the while loop we jump over every alternate node and subtract the faster speed as the time taken to cross = max(crossingSpeeds[node1], crossingSpeeds[node2]) where node 1 and node 2 any arbitary nodes.
 
 STEP 3 and STEP 4 imply there is a bias added everytime a set of people cross the bridge.<br>
 The fastest and the second fastest cross the bridge and one of these transporters comes back with the tourch then after the two slower people have passes the other transporter comes back with the tourch.
