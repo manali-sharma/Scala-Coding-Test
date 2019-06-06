@@ -54,7 +54,7 @@ crossingSpeeds[0] refers to the fastest person -> thus it is assigned as the tra
 <br>
 The fastest person would cross the bridge with totalPeople-1 slower people, as max(crossingSpeed[0], crossingSpeed[anyother]) = crossingSpeeds[anyother], thus we sum the bridge crossing time of all the other nodes.
 <br>
-As per STEP 6, the transporter f1 returns to the initial point until there are 2 nodes remaining thus it returns totalPeople-3 times. Therefore, (totalPeople - 2) * crossingSpeeds[0] is added to the total time.
+As per STEP 6, the transporter f1 returns to the initial point until there are 2 nodes remaining thus it returns totalPeople-2 times. Therefore, (totalPeople - 2) * crossingSpeeds[0] is added to the total time.
 <br>
 Since we pass over every node. The total time complexity = complexity of sort + O(n)
 <br>
